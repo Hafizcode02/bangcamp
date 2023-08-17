@@ -275,8 +275,28 @@ html {
   flex-direction: column;
 }
 
+/* footer */
+footer {
+  display: flex;
+  background-color: #c51605;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 60px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #272829;
+}
+
 /* navbar */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .mobile-menu {
     display: none;
   }
@@ -319,5 +339,14 @@ html {
   }
   .main-content img {
     margin-left: 50px;
+  }
+}
+
+@media (max-width: 810px) {
+  .sect-card {
+    flex-direction: column;
+  }
+  .img-home {
+    display: none;
   }
 }
