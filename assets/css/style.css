@@ -201,6 +201,39 @@
   width: 280px;
 }
 
+/* sign now */
+.sign-now {
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.sign-now p {
+  text-align: center;
+}
+
+.btn-pesan {
+  background-color: #fff;
+  border: 2px solid #c51605;
+  color: #272829;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.btn-pesan:hover {
+  background-color: #c51605;
+  color: #fff;
+}
+
 /* navbar */
 @media screen and (min-width: 768px) {
   .mobile-menu {
