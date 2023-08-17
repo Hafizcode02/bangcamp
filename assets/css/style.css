@@ -8,9 +8,11 @@
   text-decoration: none;
 }
 
-html {
-  overflow: hidden;
+.red {
+  color: #c51605;
 }
+
+/* header nav */
 
 .header {
   width: 100%;
@@ -36,11 +38,6 @@ html {
 
 .logo {
   color: #272829;
-  font-weight: 800;
-}
-
-.logo .red {
-  color: #c51605;
 }
 
 .menu a {
@@ -102,6 +99,109 @@ html {
   display: inline-flex;
 }
 
+.container {
+  display: flex;
+}
+
+/* home */
+.home {
+  flex-direction: row;
+  padding: 2em;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 7em;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  row-gap: 1em;
+}
+
+.home-text h1 {
+  font-size: 30px;
+}
+
+.home-text p {
+  font-size: 17px;
+}
+
+.btn-home {
+  background-color: #fff;
+  border: 2px solid #c51605;
+  color: #272829;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.btn-home:hover {
+  background-color: #c51605;
+  color: #fff;
+}
+
+.img-home img {
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.img-home img {
+  width: 350px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* course */
+.course {
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 3em;
+}
+
+.sect-card {
+  flex-direction: row;
+  gap: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.border-red {
+  border: 4px solid #c51605;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card .description {
+  padding: 0.5em;
+}
+
+.card .description p {
+  margin-top: 10px;
+  width: 280px;
+}
+
+/* navbar */
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -118,5 +218,25 @@ html {
     justify-content: center;
     width: 10vw;
     font-weight: bold;
+  }
+}
+
+@media (max-width: 600px) {
+  .img-home {
+    display: none;
+  }
+  .home {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .home-text {
+    width: 100%;
+  }
+  .home-text p {
+    width: 100%;
+    text-align: left;
+  }
+  .sect-card {
+    flex-direction: column;
   }
 }
