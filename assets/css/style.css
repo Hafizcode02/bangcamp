@@ -12,6 +12,10 @@
   color: #c51605;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* header nav */
 
 .header {
