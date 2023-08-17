@@ -186,14 +186,15 @@ html {
 .border-red {
   border: 4px solid #c51605;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card img {
   width: 300px;
   height: 200px;
   object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card .description {
@@ -236,6 +237,21 @@ html {
 .btn-pesan:hover {
   background-color: #c51605;
   color: #fff;
+}
+
+/* testimoni */
+.testimoni {
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 3em;
+}
+
+.border-black {
+  border: 4px solid #272829;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
 }
 
 /* navbar */
