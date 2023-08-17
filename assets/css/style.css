@@ -254,6 +254,27 @@ html {
   border-radius: 10px;
 }
 
+.about {
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 3em;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8em;
+  padding-right: 8em;
+  column-gap: 4em;
+}
+
+.main-content .text {
+  display: flex;
+  flex-direction: column;
+}
+
 /* navbar */
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -291,5 +312,12 @@ html {
   }
   .sect-card {
     flex-direction: column;
+  }
+  .main-content {
+    flex-direction: column;
+    padding: unset;
+  }
+  .main-content img {
+    margin-left: 50px;
   }
 }
